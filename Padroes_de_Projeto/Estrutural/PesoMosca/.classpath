@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="FlyweightBrowser/src"/>
+	<classpathentry kind="src" path="GameChuvendoMonstrosComMetodoFabrica/src/main/java"/>
+	<classpathentry kind="src" path="PesoMoscaExemplo/src"/>
+	<classpathentry kind="src" path="Simple-RPG-Game/src"/>
+	<classpathentry kind="lib" path="FlyweightBrowser/lib/filterbuilder.jar"/>
+	<classpathentry kind="lib" path="FlyweightBrowser/lib/htmllexer.jar"/>
+	<classpathentry kind="lib" path="FlyweightBrowser/lib/htmlparser.jar"/>
+	<classpathentry kind="lib" path="FlyweightBrowser/lib/junit.jar"/>
+	<classpathentry kind="lib" path="FlyweightBrowser/lib/sax2.jar"/>
+	<classpathentry kind="lib" path="FlyweightBrowser/lib/thumbelina.jar"/>
+	<classpathentry kind="lib" path="GameChuvendoMonstrosComMetodoFabrica/target/Game-1.0-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="PesoMoscaExemplo/lib/CopyLibs/org-netbeans-modules-java-j2seproject-copylibstask.jar"/>
+	<classpathentry kind="lib" path="Simple-RPG-Game/lib/CopyLibs/org-netbeans-modules-java-j2seproject-copylibstask.jar"/>
+	<classpathentry kind="lib" path="Simple-RPG-Game/lib/jinput.jar"/>
+	<classpathentry kind="lib" path="Simple-RPG-Game/lib/lwjgl_util.jar"/>
+	<classpathentry kind="lib" path="Simple-RPG-Game/lib/lwjgl.jar"/>
+	<classpathentry kind="lib" path="Simple-RPG-Game/lib/slick.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -10,6 +10,4 @@ public class FormatoJpeg implements Formato{
         return null;
     }
     
-    
-    
 }
