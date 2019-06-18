@@ -65,3 +65,5 @@ RevisaoJava/Andar.class
 
 .directory
 /Streams_e_Serializacao/LeituraCSV/build/
+/Padroes_de_Projeto/Estrutural/Adapter/AdapterCliente/nbproject/private/
+/Padroes_de_Projeto/Estrutural/Adapter/ClienteExterno/nbproject/private/
