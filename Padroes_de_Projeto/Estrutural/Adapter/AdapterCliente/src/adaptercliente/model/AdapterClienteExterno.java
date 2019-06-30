@@ -1,15 +1,12 @@
 package adaptercliente.model;
 
 import lib.ClienteExterno;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Arrays;
 
 public class AdapterClienteExterno extends Cliente{
     private ClienteExterno clienteExterno;
 	
     public AdapterClienteExterno(ClienteExterno ce) {
-            this.clienteExterno = ce
+            this.clienteExterno = ce;
     }
 
     @Override
@@ -19,13 +16,13 @@ public class AdapterClienteExterno extends Cliente{
 
     @Override
     public void setNomeCompleto(String nomeCompleto) {
-        List<String> nomeList = new ArrayList<String>(Arrays.asList(nomeCompleto.split(" ")));;
+        String[] nomeArray = nomeCompleto.split("\\s");
         String sobrenome;
 
-        this.clienteExterno.setNome(nomeList[0]);
-        this.sobrenome = sobrenome + nomeList[1];
-        for(int i=2; i < nomeList.size(); i++){
-            this.sobrenome = sobrenome + " " + nomeList[i];
+        this.clienteExterno.setNome(nomeArray[0]);
+        sobrenome = nomeArray[1];
+        for(int i=2; i < nomeArray.length; i++){
+            sobrenome = sobrenome + " " + nomeArray[i];
         }
         this.clienteExterno.setSobreNome(sobrenome);
         
@@ -52,7 +49,7 @@ public class AdapterClienteExterno extends Cliente{
 
     @Override
     public void setEmail(String email) {
-        this.clienteExterno.setEmail(email)
+        this.clienteExterno.setEmail(email);
     }
 
     @Override

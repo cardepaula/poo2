@@ -1,0 +1,4 @@
+ 
+ O consumo de memória da aplicação, sem utilizar o padrão, é de: 49169.6171875 KB.
+ Já utilizando o padrão peso mosca o consumo de memória foi de: 34473.8125 KB.
+ Com o padrão, o consumo de memória teve uma redução de um pouco mais de 14MB.

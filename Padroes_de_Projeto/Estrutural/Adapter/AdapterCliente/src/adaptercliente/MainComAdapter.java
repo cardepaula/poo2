@@ -1,6 +1,7 @@
 
 package adaptercliente;
 
+import adaptercliente.model.*;
 import adaptercliente.visao.VisaoCliente;
 import lib.ClienteExterno;
 
@@ -20,7 +21,7 @@ public class MainComAdapter {
         ce.setNome("Jose");
         ce.setSobreNome("Silva");
 
-        Cliente cliente = AdapterClienteExterno(ce);
+        Cliente cliente = new AdapterClienteExterno(ce);
 
         VisaoCliente visao = new VisaoCliente();
         visao.setInformacoesCliente(cliente);//espera um Cliente
