@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Arrays;
 
-public class AdapterClienteExterno extends ICliente{
+public class AdapterClienteExterno extends Cliente{
     private ClienteExterno clienteExterno;
 	
     public AdapterClienteExterno(ClienteExterno ce) {

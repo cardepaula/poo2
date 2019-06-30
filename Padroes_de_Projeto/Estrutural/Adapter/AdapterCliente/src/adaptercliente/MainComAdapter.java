@@ -20,7 +20,7 @@ public class MainComAdapter {
         ce.setNome("Jose");
         ce.setSobreNome("Silva");
 
-        ICliente cliente = AdapterClienteExterno(ce);
+        Cliente cliente = AdapterClienteExterno(ce);
 
         VisaoCliente visao = new VisaoCliente();
         visao.setInformacoesCliente(cliente);//espera um Cliente
