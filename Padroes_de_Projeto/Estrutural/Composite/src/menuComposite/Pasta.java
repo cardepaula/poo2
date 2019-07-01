@@ -3,26 +3,26 @@ package menuComposite;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Pasta extends Arquivos {
-    private List<Arquivos> listaDeArquivos = new ArrayList<>();
+public class Pasta extends ItemMenu {
+    private List<ItemMenu> listaDeItemMenu = new ArrayList<>();
 
     public Pasta(String nome) {
         super(nome);
     }
 
-    public void inserirArquivo(Arquivos novoArquivo){
-        this.listaDeArquivos.add(novoArquivo);
+    public void inserirItem(ItemMenu item){
+        this.listaDeItemMenu.add(item);
     }
 
-    public void removerArquivo(Arquivos arquivo) {
-        this.listaDeArquivos.remove(arquivo);
+    public void removerItem(ItemMenu item) {
+        this.listaDeItemMenu.remove(item);
     }
 
-    public Arquivos getArquivo(int index) {
-        return this.listaDeArquivos.get(index);
+    public ItemMenu getItem(int index) {
+        return this.listaDeItemMenu.get(index);
     }
 
-    public int getNumArquivos() {
-        return this.listaDeArquivos.size();
+    public int getNumItem() {
+        return this.listaDeItemMenu.size();
     }
 }

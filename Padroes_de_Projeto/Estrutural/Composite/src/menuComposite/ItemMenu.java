@@ -1,11 +1,10 @@
 package menuComposite;
 
-public class Menus {
+public abstract class ItemMenu {
 
     public String nome;
 
-
-    public Menus(String nome) {
+    public ItemMenu(String nome) {
         this.nome = nome;
     }
 }
