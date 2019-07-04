@@ -15,7 +15,7 @@ import org.apache.poi.xwpf.usermodel.XWPFRun;
 
 /*Esse codigo esta uma bangunca..*/
 
-public class ExportFiles {
+public abstract class ExportFiles {
 
     BufferedWriter out = null;
     XWPFDocument document;
@@ -44,57 +44,22 @@ public class ExportFiles {
 
     }
     
-    public void exportHTML(String txt){
+    public void export(String txt){
         String[] txtLinhas = txt.split("\n");
         for(Object linhas : txtLinhas )
         {
-            printLineHTML((String)linhas);
-        }   
-        saveHTML();
+            printLine((String)linhas);
+        }
+        save();
+
+    }
+
+
+
+    private abstract void printLineWord(String linha);
         
-    }
+    protected abstract void saveWord();
     
-    public void exportWord(String txt){
-             String[] txtLinhas = txt.split("\n");
-        for(Object linhas : txtLinhas )
-        {
-            printLineWord((String)linhas);
-        }   
-        saveWord();   
-    }
 
-    private void printLineHTML(String linha) {
-        try {
-            out.write("<BR>" + linha);
-        } catch (IOException ex) {
-            Logger.getLogger(ExportFiles.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }
-
-    private void printLineWord(String linha) {
-        XWPFParagraph paragraph = document.createParagraph();
-        XWPFRun run = paragraph.createRun();
-        run.setText(linha);
-    }
-        
-    protected void saveWord() {
-        try {
-            document.write(out1);
-            out1.close();
-        } catch (IOException ex) {
-            Logger.getLogger(ExportFiles.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }
-    
-    protected void saveHTML() {
-        try {
-            out.write("</BODY>");
-            out.write("</HTML>");
-            out.close();
-        } catch (IOException ex) {
-            Logger.getLogger(ExportFiles.class.getName()).log(Level.SEVERE, null, ex);
-        }
-
-    }
 
 }
